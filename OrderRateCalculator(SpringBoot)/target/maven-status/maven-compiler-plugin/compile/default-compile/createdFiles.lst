@@ -1,0 +1,12 @@
+com\jilaba\orderratecalculator\AppStart.class
+com\jilaba\orderratecalculator\serviceimpl\OrdeRateServiceImpl.class
+com\jilaba\orderratecalculator\config\AppConfig.class
+com\jilaba\orderratecalculator\dao\OrderRateDao.class
+com\jilaba\orderratecalculator\form\FrmOrderRateCalc$1.class
+com\jilaba\orderratecalculator\query\OrderRateQuery.class
+com\jilaba\orderratecalculator\common\AppMain.class
+com\jilaba\orderratecalculator\common\ImageResources.class
+com\jilaba\orderratecalculator\form\FrmOrderRateCalc.class
+com\jilaba\orderratecalculator\daoimpl\OrderRateDaoImpl.class
+com\jilaba\orderratecalculator\logic\OrderRateLogic.class
+com\jilaba\orderratecalculator\service\OrderRateService.class
