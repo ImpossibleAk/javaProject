@@ -1,0 +1,22 @@
+        String data = "SensitiveData123"; // Data to be encrypted
+
+        // Generate AES key
+        KeyGenerator keyGen = KeyGenerator.getInstance("AES");
+        keyGen.init(128); // 128-bit key
+        SecretKey secretKey = keyGen.generateKey();
+        byte[] secretKeyBytes = secretKey.getEncoded();
+        SecretKeySpec secretKeySpec = new SecretKeySpec(secretKeyBytes, "AES");
+
+        // Encrypt the data
+        Cipher encryptCipher = Cipher.getInstance("AES");
+        encryptCipher.init(Cipher.ENCRYPT_MODE, secretKeySpec);
+        byte[] encryptedBytes = encryptCipher.doFinal(data.getBytes());
+        String encryptedData = Base64.getEncoder().encodeToString(encryptedBytes);
+        System.out.println("Encrypted Data: " + encryptedData);
+
+        // Decrypt the data
+        Cipher decryptCipher = Cipher.getInstance("AES");
+        decryptCipher.init(Cipher.DECRYPT_MODE, secretKeySpec);
+        byte[] decryptedBytes = decryptCipher.doFinal(Base64.getDecoder().decode(encryptedData));
+        String decryptedData = new String(decryptedBytes);
+        System.out.println("Decrypted Data: " + decryptedData)
