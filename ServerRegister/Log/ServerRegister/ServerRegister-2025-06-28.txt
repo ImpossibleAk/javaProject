@@ -1,0 +1,8 @@
+Jun 28, 2025 3:03:52 PM com.project.serverregister.AppStart main
+INFO: Application Started
+Jun 28, 2025 3:03:52 PM com.project.serverregister.AppStart main
+INFO: Application Ended
+Jun 28, 2025 3:07:00 PM com.project.serverregister.AppStart main
+INFO: Application Started
+Jun 28, 2025 3:07:00 PM com.project.serverregister.AppStart main
+INFO: Application Ended
